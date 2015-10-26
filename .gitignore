@@ -1,0 +1,6 @@
+### Pico CMS ignore rules
+
+# Composer
+composer.lock
+composer.phar
+vendor

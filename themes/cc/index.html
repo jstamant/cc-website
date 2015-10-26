@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>{{ site_title }} - {{ current_page.title }}</title>
+    {% if meta.description %}
+      <meta name="description" content="{{ meta.description }}" /> 
+    {% endif %}
+    {% if meta.robots %}
+      <meta name="robots" content="{{ meta.robots }}" />
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ theme_url }}/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.ico" />
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));</script>
+    {% include "header.html" %}
+    
+    <div id="content">
+
+      {% block content %}
+
+        <img alt="*" src="{{ theme_url }}/images/banner-image.jpg" />
+
+        <h2>Bienvenue and Welcome to the official site of Ça Claque!</h2>
+
+        <iframe class="video-center" width="560" height="315" src="https://www.youtube.com/embed/ejQH_QOQLdQ" frameborder="0" allowfullscreen></iframe>
+
+        {{ content }}
+
+        <div id="highlights" class="table">
+          <div class="col3">
+            <h3>Group members</h3>
+            <img alt="*" src="{{ theme_url }}/images/highlight1.jpg" />
+            <p>Ça Claque! Together since the fall of 2009, its members are devoted to the evolution of folk tradition.</p>
+            <a href="/biography">Learn more »</a>
+          </div>
+          <div class="col3">
+            <h3>Events</h3>
+            <img alt="*" src="{{ theme_url }}/images/highlight2.jpg" />
+            <p>Would you like to see us perform? Discover our site, as well as our upcoming events.</p>
+            <a href="/events">Learn more »</a>
+          </div>
+          <div class="col3">
+            <h3>Gallery</h3>
+            <img alt="*" src="{{ theme_url }}/images/highlight3.jpg" />
+            <p>Come see our photo gallery! Preview the Ça Claque! experience today.</p>
+            <a href="/gallery">Learn more »</a>
+          </div>
+        </div>
+
+      {% endblock %}
+      
+    </div>
+    
+    {% include "footer.html" %}
+    
+  </body>
+</html>

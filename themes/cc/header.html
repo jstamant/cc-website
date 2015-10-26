@@ -1,0 +1,19 @@
+
+<div id="header">
+  <div id="banner">
+    <a id="logo-wrapper" href="{{ base_url }}">
+      <img alt="{{ site_title }}" src="{{ theme_url }}/images/logo.png" />
+    </a>
+
+    <div id="nav">
+      <ul>
+        {# List all top-level navigation links #}
+        {% for page in pages %}
+          {% if not page.date %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
