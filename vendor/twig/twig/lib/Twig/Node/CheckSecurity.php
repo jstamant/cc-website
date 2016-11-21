@@ -41,12 +41,12 @@ class Twig_Node_CheckSecurity extends Twig_Node
         }
 
         $compiler
-            ->write("\$tags = ")->repr(array_filter($tags))->raw(";\n")
-            ->write("\$filters = ")->repr(array_filter($filters))->raw(";\n")
-            ->write("\$functions = ")->repr(array_filter($functions))->raw(";\n\n")
+            ->write('$tags = ')->repr(array_filter($tags))->raw(";\n")
+            ->write('$filters = ')->repr(array_filter($filters))->raw(";\n")
+            ->write('$functions = ')->repr(array_filter($functions))->raw(";\n\n")
             ->write("try {\n")
             ->indent()
-            ->write("\$this->env->getExtension('sandbox')->checkSecurity(\n")
+            ->write("\$this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(\n")
             ->indent()
             ->write(!$tags ? "array(),\n" : "array('".implode("', '", array_keys($tags))."'),\n")
             ->write(!$filters ? "array(),\n" : "array('".implode("', '", array_keys($filters))."'),\n")

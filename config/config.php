@@ -20,6 +20,7 @@
  */
 $config['site_title'] = 'Ça Claque!';           // Site title
 // $config['base_url'] = '';                       // Override base URL (e.g. http://example.com)
+// $config['rewrite_url'] = null;               // A boolean indicating forced URL rewriting
 
 /*
  * THEME
@@ -39,11 +40,12 @@ $config['pages_order_by'] = 'date';             // Order pages by "alpha" or "da
 $config['pages_order'] = 'asc';                 // Order pages "asc" or "desc"
 $config['excerpt_length'] = 50;                 // The pages excerpt length (in words)
 $config['content_dir'] = 'content/';            // Content directory
+// $config['content_ext'] = '.md';              // File extension of content files to serve
 
 /*
  * TIMEZONE
  */
-// date_default_timezone_set('UTC');               // Timezone may be reqired by your php install
+// $config['timezone'] = 'UTC';                 // Timezone may be required by your php install
 
 /*
  * CUSTOM
