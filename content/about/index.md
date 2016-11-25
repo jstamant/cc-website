@@ -1,8 +1,8 @@
-/*
-Title: Biographies
-Template: biographies
+---
+Title: About
+Template: about
 Placing: 3
-*/
+---
 
 Since October 2009, the members of Ça Claque! have been promoting and celebrating French-Canadian folklore.
 

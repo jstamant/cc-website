@@ -5,7 +5,7 @@
   <head>
     <title>{{ site_title }} - {{ current_page.title }}</title>
     {% if meta.description %}
-      <meta name="description" content="{{ meta.description }}" /> 
+      <meta name="description" content="{{ meta.description }}" />
     {% endif %}
     {% if meta.robots %}
       <meta name="robots" content="{{ meta.robots }}" />
@@ -13,27 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{{ theme_url }}/style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker" rel="stylesheet">
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));</script>
+
     {% include "header.html" %}
-    
+
     <div id="content">
 
       {% block content %}
-
-        <img alt="*" src="{{ theme_url }}/images/banner-image.jpg" />
-
-        <h2>Bienvenue and Welcome to the official site of Ça Claque!</h2>
-
-        <iframe class="video-center" width="560" height="315" src="https://www.youtube.com/embed/ejQH_QOQLdQ" frameborder="0" allowfullscreen></iframe>
 
         {{ content }}
 
@@ -59,10 +47,10 @@
         </div>
 
       {% endblock %}
-      
+
     </div>
-    
+
     {% include "footer.html" %}
-    
+
   </body>
 </html>
