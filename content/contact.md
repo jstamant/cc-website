@@ -3,6 +3,9 @@ Title: Contact
 Placing: 4
 ---
 
-## Contact information
+# Contact information
 
-Test paragraph.
+## Bookings
+
+Collette St-Amant, info@caclaque.com
+

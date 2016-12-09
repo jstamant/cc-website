@@ -106,20 +106,20 @@ Header elements
 }
 
 #nav a {
+  color: #000;
   font-size: 200%;
 }
 
 #nav a:link, #nav a:visited, #nav a:active {
-  color: #777;
   text-decoration: none;
 }
 
 #nav a:hover {
-  color: #000;
+  text-decoration: underline;
 }
 
 #nav a.active:link, #nav a.active:visited {
-  color: #000;
+  text-decoration: underline;
 }
 
 /*******************************************************************************
