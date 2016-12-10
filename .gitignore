@@ -3,3 +3,7 @@
 # Composer
 composer.phar
 vendor*
+
+# Pico Edit plugin
+plugins/pico_edit/
+
