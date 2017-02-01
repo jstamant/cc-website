@@ -14,11 +14,12 @@ $ php composer.phar update
 ## Todo list
 
 * Add muted-autoplay to the promo video
-* Remove banner-image.jpg if unused
 * Banner image idea: group pic, photoshopped as a sketch overlayed on background
 * Set a default background color in case background image isn't loaded
 * Make larger clicking areas for nav
 * Fix responsive/resizing on nav buttons
 * Download google fonts into theme for faster access
+* Float pictures left/right while maintaining responsive layout
+* Find new heading font
 
 

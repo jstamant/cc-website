@@ -15,13 +15,13 @@ p {
   font-size: 1em;
 }
 
-a:link, a:visited, a:active {
-  color: #000;
-  text-decoration: underline;
+a {
+  color: #00a7e9;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #f44;
+  color: #00709d;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,7 +47,7 @@ body {
 
 .post * {
   margin: 0;
-}
+}
 
 .post-meta a:link, .post-meta a:visited, .post-meta a:active {
   color: inherit;
@@ -128,6 +128,9 @@ Content elements
 
 #content {
   padding: 2%;
+}
+
+#highlights {
   text-align: center;
 }
 
@@ -138,6 +141,10 @@ Content elements
         width: 100%;
         padding: 0% 0% 3% 0%;
     }
+}
+
+.video-center {
+  text-align: center;
 }
 
 /*******************************************************************************

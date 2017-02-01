@@ -40,7 +40,7 @@ $config['pages_order_by'] = 'date';             // Order pages by "alpha" or "da
 $config['pages_order'] = 'asc';                 // Order pages "asc" or "desc"
 $config['excerpt_length'] = 50;                 // The pages excerpt length (in words)
 $config['content_dir'] = 'content/';            // Content directory
-// $config['content_ext'] = '.md';              // File extension of content files to serve
+$config['content_ext'] = '.md';                 // File extension of content files to serve
 
 /*
  * TIMEZONE
